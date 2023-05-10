@@ -1,1 +1,6 @@
-# PMDM_A_UF2_Gil_Adamuz_Francisco_Javier_UNTITLED_TANK_GAME
+# UNTITLED TANK GAME
+Creado por: Francisco Javier Gil Adamuz
+
+Grupo: A
+
+Curso: 2022-23
