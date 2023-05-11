@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinController : MonoBehaviour
+public class LoseController : MonoBehaviour
 {
 
     [SerializeField] GameObject panel;
@@ -11,7 +11,7 @@ public class WinController : MonoBehaviour
     void Awake()
     {
         panel.SetActive(false);
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Win");
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Lose");
 
         if(objs.Length > 1){
             Destroy(this.gameObject);
@@ -21,19 +21,9 @@ public class WinController : MonoBehaviour
 
     void Nope(){
         panel.SetActive(false);
-        Camera.main.GetComponent<AudioSource>().Stop();
-        GameManager.UnPause();
+        Time.timeScale=1;
         GameManager.GameOver();
     }
-
-    void NGPlus()
-    {
-        panel.SetActive(false);
-        SceneManager.LoadScene(1);
-        new WaitForSeconds(2);
-        GameManager.UnPause();
-    }
-
 
     void Open(){
         panel.SetActive(true);

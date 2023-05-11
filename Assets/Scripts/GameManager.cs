@@ -101,6 +101,12 @@ public class GameManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Win").SendMessage("Open");
     }
 
+    public static void GameLose(){
+        Pause();
+        Camera.main.GetComponent<AudioSource>().Play();
+        GameObject.FindGameObjectWithTag("Lose").SendMessage("Open");
+    }
+
 
     public static void NextLevel(){        
         int next = SceneManager.GetActiveScene().buildIndex+1;

@@ -112,6 +112,7 @@ public class UpgradePanelController : MonoBehaviour
 
 
     void Continue(){
+        Camera.main.GetComponent<AudioSource>().Stop();
         panel.SetActive(false);
         GameManager.NextLevel();
     }

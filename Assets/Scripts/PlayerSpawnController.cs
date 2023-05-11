@@ -16,7 +16,7 @@ public class PlayerSpawnController : MonoBehaviour
         if(GameManager.money>=1000){Spawn(GameManager.select);
         }    
         else{
-            GameManager.GameOver();
+            GameManager.GameLose();
         }    
     }
 
