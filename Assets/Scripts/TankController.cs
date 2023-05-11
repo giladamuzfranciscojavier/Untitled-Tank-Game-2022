@@ -181,7 +181,9 @@ public class TankController : MonoBehaviour
             Rigidbody2D rbo = other.gameObject.GetComponent<Rigidbody2D>();
             if((other.gameObject.tag=="Enemy" || other.gameObject.tag=="Breakable") && !colCool){
                 //StartCoroutine("ColCool");
-                other.gameObject.SendMessage("Damage",(rb.mass-rbo.mass)*10);                
+                if(rb.mass>rbo.mass){
+                    other.gameObject.SendMessage("Damage",(rb.mass-rbo.mass)*10);     
+                }           
             }
         }
     }
