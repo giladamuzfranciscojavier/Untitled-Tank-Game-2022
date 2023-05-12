@@ -1,3 +1,4 @@
 # LINK AL VÍDEO DE PRESENTACIÓN
 
-https://www.youtube.com/watch?v=a_HSYtXJFNI
+Condensado: https://www.youtube.com/watch?v=a_HSYtXJFNI
+Sin condensar: https://www.youtube.com/watch?v=-uQqfaJztlo
