@@ -21,7 +21,7 @@ public class WinController : MonoBehaviour
 
     void Nope(){
         panel.SetActive(false);
-        Camera.main.GetComponent<AudioSource>().Stop();
+        //Camera.main.GetComponent<AudioSource>().Stop();
         GameManager.UnPause();
         GameManager.GameOver();
     }

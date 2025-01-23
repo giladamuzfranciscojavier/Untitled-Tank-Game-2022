@@ -90,20 +90,20 @@ public class GameManager : MonoBehaviour
 
     public static void LevelWin(){
         Pause();
-        Camera.main.GetComponent<AudioSource>().Play();
+        //Camera.main.GetComponent<AudioSource>().Play();
         GameObject.FindGameObjectWithTag("UpgradeUI").SendMessage("Open");
     }
 
 
     public static void GameWin(){
         Pause();
-        Camera.main.GetComponent<AudioSource>().Play();
+        //Camera.main.GetComponent<AudioSource>().Play();
         GameObject.FindGameObjectWithTag("Win").SendMessage("Open");
     }
 
     public static void GameLose(){
         Pause();
-        Camera.main.GetComponent<AudioSource>().Play();
+        //Camera.main.GetComponent<AudioSource>().Play();
         GameObject.FindGameObjectWithTag("Lose").SendMessage("Open");
     }
 
